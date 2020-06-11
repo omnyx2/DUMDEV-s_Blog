@@ -1,0 +1,83 @@
+.portfolio__basic_header{
+}
+
+
+.portfolio__faceImg_img {
+   width: 50Rem;
+   height: auto;
+}
+
+.portfolio__basic_header {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.portfolio__name {
+  padding: 2rem;
+  color: rgb(36, 32, 46);
+}
+
+.portfolio__grid {
+  display: grid;
+  grid-gap: 0rem;
+  text-align: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 2rem;
+  color: rgb(36, 32, 46);
+  border-top-color: #929292;
+}
+
+.portfolio__detail_header {
+ background-color: #fbfbfb;
+}
+
+@media (max-width: 1100px) {
+  .portfolio__intro {
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .portfolio__intro_content {
+    text-align: left;
+  }
+  .portfolio__expertise {
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .portfolio__expertise_content {
+    display: flex;
+	flex-flow: row wrap;
+    flex-direction: row;
+	flex-wrap: wrap;
+  }
+  .portfolio__expertise_item{
+	display: flex;
+	padding-bottom: 1.75rem;	
+	width: calc(99.999999% * 0.5);
+  }
+  .portfolio_expertise_body{
+  	flex: 1;
+  }
+ .portfolio__awards_annotation{
+    text-align: left;
+  }
+  .portfolio__education {
+    text-align: left;
+    padding-top: 2rem;
+  }
+  .portfolio__education_body {
+  	flex:1;
+  }
+  .portfolio__education_content {
+    text-align: left;
+  }
+  .portfolio__awards {
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .portfolio__awards_content {
+    text-align: left;
+  }
+}

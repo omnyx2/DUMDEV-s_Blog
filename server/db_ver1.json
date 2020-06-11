@@ -1,0 +1,148 @@
+{
+  "users":{
+	"01Efderd": {
+		"portfolio": {
+		},
+		"recent_post": {
+			"headers":{
+				"type": "series or normal or books",
+				"category":"python",
+				"image": "www.naver.com",
+				"tags": ["python","C++"],
+				"title": "Hello Blog",
+				"author": "omnyx2",
+				"date": {
+					"created":"2019-11-28",
+					"fixed": "2019-11-29"
+				}
+			},
+			"book": {
+				"id": 1,
+				"title":"",
+				"published": "2019-11-29"
+			},
+			"serise": {
+				"id": 1,
+				"title": "pythontf"
+			},
+			"content": ""
+		},
+		"all_tags": ["C++", "python", "React"],
+		"postings": [10,22,24,26,17,26,34,35,36,37,38,39,40,42],
+		"serise":[1,2,3,4],
+		"books":[1,2,3,4]
+		}
+	}
+  },
+  "books":{
+		"1":{
+			"title":"http perfect guide",
+			"author":{
+				"id":"01Efderd",
+				"name":"omnyx2"
+			},
+			"post":"1",
+			"date": "2019-11-20"
+		}
+  },
+  "serise":{
+	"1":{
+				"posts":[10,22,24],
+				"title":"pythontf",
+				"author":{
+						"id":"01Efderd",
+						"name":"omnyx2"
+				},
+				"image":"www.naver.com",
+				"published":"2019-11-29"
+			},
+			"2":{
+				"title": "arduino",
+				"posts":[17,26,34,35],
+				"author":{
+						"id":"01Efderd",
+						"name":"omnyx2"
+				},
+				"image":"www.naver.com",
+				"published":"2019-11-29"
+			},
+			"3":{
+				"title": "making blog", 
+				"posts":[36,37,38,40],
+				"author":{
+						"id":"01Efderd",
+						"name":"omnyx2"
+				},
+				"image":"www.naver.com",
+				"published":"2019-11-29"
+			},
+			"4":{
+				"title": "to be master",
+				"posts": [42],
+				"author":{
+						"id":"01Efderd",
+						"name":"omnyx2"
+				},
+				"image":"www.naver.com",
+				"published":"2019-11-29"
+			}
+  },
+  "posts": {
+	"1":{
+		"headers":{
+			"type": "normal",
+			"category":"python",
+			"image": "www.naver.com",
+			"tags": ["python","C++"],
+			"title": "Hello Blog",
+			"author": "omnyx2",
+			"date": {
+				"created":"2019-11-28",
+				"fixed": "2019-11-29"
+			}
+		},
+		"content":""
+	       
+	},
+	"2":{
+		"headers":{
+			"type": "serise",
+			"category":"python",
+			"image": "www.naver.com",
+			"tags": ["python","C++"],
+			"title": "Hello Blog",
+			"author": "omnyx2",
+			"date": {
+				"created":"2019-11-28",
+				"fixed": "2019-11-29"
+			}
+		},
+		"serise": {
+				"id": 1,
+				"title": "pythontf"
+		},
+	    "content":""	
+	},
+	"3":{
+		"headers":{
+			"type": "book",
+			"category":"python",
+			"image": "www.naver.com",
+			"tags": ["python","C++"],
+			"title": "Hello Blog",
+			"author": "omnyx2",
+			"date": {
+				"created":"2019-11-28",
+				"fixed": "2019-11-29"
+			},
+			"content":""
+		},
+		"book": {
+			"id": 1,
+			"title":"",
+			"published": "2019-11-29"
+		}
+	  }
+  }
+}
+
