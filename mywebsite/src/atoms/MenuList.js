@@ -61,39 +61,38 @@ export default function MenuListComposition() {
           onClick={handleToggle}
         >
           
-		<i className="angle double up icon"></i>
-		</Button>
-        <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
-          {({ TransitionProps, placement }) => (
-            <Grow
-              {...TransitionProps}
-              style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-            >
-              <Paper>
-                <ClickAwayListener onClickAway={handleClose}>
-                  <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-					<MenuItem onClick={handleClose}>
-						<Link to="/posting">
-							Posting
-						</Link>
-					</MenuItem>
-					<MenuItem onClick={handleClose}>
-						<Link to="/profile">
-							Profile
-						</Link>
-					</MenuItem>
-					<MenuItem onClick={handleClose}>
-						<Link to="/admin">
-							Admin
-						</Link>
-					</MenuItem>
-                  </MenuList>
-                </ClickAwayListener>
-              </Paper>
-            </Grow>
-          )}
-        </Popper>
-      </div>
+    <i className="angle double up icon"></i>
+    </Button>
+    <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+      {({ TransitionProps, placement }) => (
+        <Grow
+         {...TransitionProps}
+         style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
+        >
+          <Paper>
+            <ClickAwayListener onClickAway={handleClose}>
+              <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
+                <MenuItem onClick={handleClose}>
+                  <Link to="/posting">
+                     Posting
+                  </Link>
+                </MenuItem>
+                { /* <MenuItem onClick={handleClose}>
+                  <Link to="/profile">
+                    Profile
+                  </Link>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                  <Link to="/admin">
+                    Admin
+                  </Link>
+                </MenuItem> */}
+              </MenuList>
+            </ClickAwayListener>
+          </Paper>
+        </Grow>
+      )}
+      </Popper>
     </div>
-  );
+  </div>);
 }

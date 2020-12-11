@@ -18,7 +18,7 @@ class MarkdownEditor extends React.Component {
   constructor(props) {
     super(props);
     const { mainTitle, subTitle, content} = {...props.post};
-	 this.state = {
+    this.state = {
       mainTitle,
       subTitle,
       content,

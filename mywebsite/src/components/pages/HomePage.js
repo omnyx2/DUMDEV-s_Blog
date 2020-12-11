@@ -3,83 +3,107 @@ import React from "react";
 import { createUseStyles, useTheme } from "react-jss";
 
 const useStyles = createUseStyles({
-  wrapper: {
-    padding: 40,
+  pageOuterContainer: {
     backgroundCover: ({ theme }) => "#f6f6f6",
-    textAlign: "center"
+    textAlign:"Center"
   },
-  title: {
+  pageInnerContainer: {
+    display: "flex",
+    flex-direction: column;
+    height: 100%; 
+  },
+  homepageTitleContainer: {    
+  }, 
+  homepageTitleFont: {           
     font: {
       size: "15Rem",
-      weight: 1000
-	},	  
-	padding: "8Rem 0Rem 0Rem 0Rem",
-	margin: ["0Rem", "0Rem", "6Rem", "0Rem"],
-    color: "#24202e",
+      color: "#24202e",
+    },    
+  },
+  homepageSubtitleContainer: {
+    textAlign:"center",
+  },
+  homepageSubtitleFont: {
+    color: 'rgba(0,0,0,0.37)'
   },
   homeMenu: {
-	float: "Left",
-
-	"text-align" : "Left",
-    margin: ["0Rem", "0Rem", "7Rem", "6.5Rem"]
+    flex: "none"
   },
   link: {
     color: "#24202e",
-    textDecoration: "none",
-    font: {
-      size: "1.4Rem"
-    },
+    textDecoration: "none",     
     "&:hover": {
       opacity: 0.5
     },
     transition: "0.3s"
   },
   description: {
-    margin: ["0Rem", "0Rem", "0Rem", "40Rem"],
-    mozColumnCount: 2,
-    webkitColumnCount: 2,
-    columnCount: 2,
-    columnWidth: "1Rem"
+    flex: "none"
+    margin-left: "auto",
+    width: "32rem",
+    columns: "2",
   }
 });
 
 const Comp = () => {
   const theme = useTheme();
-  const classes = useStyles({ theme });
+  const styleComponents = useStyles({ theme });
   return (
-    <div className={classes.wrapper}>
-      <h1 className={classes.title}>Dum_Dev.</h1>
-      <div className={classes.homeMenu}>
-		<Link to="/posts" className={classes.link}>
-				Posts
-		</Link>
+   <div className={styleComponents.pageOuterContainer}>
+    <div className={styleComponents.pageInnerContainer}>
+      <div className={styleComponents.homepageTitleContainer}>
+        <h1 className={styleComponents.homepageTitleFont}>Dum_Dev.</h1>
+        <div className = {styleComponents.homepageSubtitleConatiner}>
+          <h4 className = {styleComponents.homepageSubtitleFont}>
+            - Lack of time, is a just story of your mind -
+          </h4>
+        </div>
+      </div>
+      <div className={styleComponents.homeMenu}>
+        <Link to="/posts" className={styleComponents.link}>
+          Posts
+        </Link>
         <br />
-		<Link to="/Series" className={classes.link}>
-				Series
-		</Link>
+        <Link to="/Series" className={styleComponents.link}>
+          Series
+        </Link>
+          <br />
+        <Link to="/books" className={styleComponents.link}>
+          Books
+        </Link>
         <br />
-		<Link to="/books" className={classes.link}>
-				Books
-		</Link>
-        <br />
-		<Link to="/portfolio" className={classes.link}>
-				Portfoilo
-		</Link>
-        <br />
+        <Link to="/portfolio" className={styleComponents.link}>
+          Portfoilo
+        </Link>
+          <br />
         <a
-          className={classes.link}
+          className={styleComponents.link}
           href="http://cssinjs.org/react-jss"
           traget="_blank"
         >
           Search
         </a>
       </div>
-      <div className={classes.description}>
+      <div className={styleComponents.description}>
         This blog was made for posting which is results of programming study. I
-        mainly study about React.js, Node.js, Express.js, Redux, etc... 뭘 쓸지
-        고민해보기
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+        This blog was made for posting which is results of programming study. I
+     
       </div>
     </div>
+  </div>
   );
 };
 

@@ -16,13 +16,13 @@ class Sidebar extends React.Component {
     };
   }
   menuButton = () => {
-		  return (
-			<div>안뇽</div>
-	);
-	}
+      return (
+      <div>안뇽</div>
+  );
+  }
   menuItem = () => {
   return (
-  <div className="header-container">	
+  <div className="header-container">  
   <nav role="navigation">
   <div  id="menuToggle">
     <input type="checkbox" />
@@ -39,16 +39,16 @@ class Sidebar extends React.Component {
       <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
      </ul>
     </div>
-  </nav>	
+  </nav>  
   </div>
-  );}		
-		
+  );}    
+    
   render() {
     return (
-		<div className="sidebar">
-			{this.menuItem()}
-		</div>
-	);
+    <div className="sidebar">
+      {this.menuItem()}
+    </div>
+  );
   }
 }
 
